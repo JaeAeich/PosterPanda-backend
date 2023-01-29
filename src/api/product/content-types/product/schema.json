@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product"
+    "displayName": "Product",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,15 +20,15 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true,
-      "required": true
+      ]
     },
     "key": {
       "type": "uid",
@@ -42,6 +43,10 @@
     "price": {
       "type": "integer",
       "required": true
+    },
+    "isTopPick": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
